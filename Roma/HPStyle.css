@@ -110,8 +110,9 @@ a {
 }
 
 .player-div {
+    flex: 0 0 auto;
     margin-top: 20px;
-    width: 100%;
+    width: 55%;
     height: auto;
     display: flex;
     justify-content: center;
@@ -120,9 +121,19 @@ a {
 video {
     border-radius: 40px;
     object-fit: cover;
-    width: 1100px;
-    height: 600px;
+    width: 100%;
+    height: 95%;
     box-shadow: 0px 5px 10px black;
+}
+
+.trailers-div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 50px;
+    height: 65%;
+    overflow-x: hidden;
+    justify-content: center;
 }
 
 h2 {
