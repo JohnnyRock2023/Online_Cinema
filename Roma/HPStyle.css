@@ -111,20 +111,89 @@ a {
 
 .player-div {
     flex: 0 0 auto;
+    position: relative;
     margin-top: 20px;
     width: 55%;
     height: auto;
-    display: flex;
-    justify-content: center;
+    justify-items: center;
 }
 
 video {
+    z-index: 0;
+    position: absolute;
     border-radius: 40px;
     object-fit: cover;
     width: 100%;
     height: 95%;
     box-shadow: 0px 5px 10px black;
 }
+
+.preview {
+    position: absolute;
+    border-radius: 40px;
+    padding: 0px;
+    width: 100%;
+    height: 95%;
+    background-color: rgba(000, 000, 000, 0);
+    z-index: 1;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.preview:hover {
+    background-color: rgba(000, 000, 000, 0.6);
+    opacity: 1;
+}
+
+.mute {
+    position: absolute;
+    right: 7%;
+    bottom: 7%;
+    width: 1.7rem;
+    height: 1.7rem;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    border: none;
+    cursor: pointer;
+    color: transparent;
+    background-color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+    background-image: url("images/muted.png");
+}
+
+.trailer-name,
+.trailer-desc {
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 5%;
+    padding: 0%;
+}
+
+.trailer-name {
+    font-size: 2.5rem;
+    bottom: 20%;
+}
+
+.trailer-desc {
+    font-size: 1.3rem;
+    bottom: 15%;
+}
+
+.age-limit {
+    position: absolute;
+    width: auto;
+    height: auto;
+    right: 7%;
+    top: 7%;
+    font-size: 1.3rem;
+}
+
 
 .trailers-div {
     display: flex;

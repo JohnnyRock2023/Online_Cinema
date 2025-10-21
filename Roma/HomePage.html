@@ -35,17 +35,25 @@
     </div>
     <div class="trailers-div">
         <div class="player-div">
-            <video poster="images/DMCPoster.jpg" controls autoplay loop muted>
+            <video poster="images/DMCPoster.jpg">
                 <source src="videos/Dante.mp4">
             </video>
         </div>
         <div class="player-div">
-            <video poster="images/DMCPoster.jpg" controls autoplay loop muted>
+            <div class="preview">
+
+                <h2 class="trailer-name">Диявол може плакати</h2>
+                <h5 class="trailer-desc">2025, Фантастика</h5>
+                <h5 class="age-limit">16+</h5>
+                <button id='mute' class="mute" data-state="mute"></button>
+                <a href="#"></a>
+            </div>
+            <video id="video" poster="images/DMCPoster.jpg" controls autoplay muted loop>
                 <source src="videos/DMC.mp4">
             </video>
         </div>
         <div class="player-div">
-            <video poster="images/DMCPoster.jpg" controls autoplay loop muted>
+            <video poster="images/DMCPoster.jpg">
                 <source src="videos/Dante.mp4">
             </video>
         </div>
@@ -171,6 +179,7 @@
         </div>
     </div>
     </div>
+    <script src="HPJS.js"></script>
 </body>
 
 </html>
