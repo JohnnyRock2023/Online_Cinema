@@ -17,45 +17,67 @@
     <div class="header">
         <img class="logo" src="images/logo.png" alt="logo">
         <ul>
-            <li> <a href="#">Фільми</a></li>
-            <li> <a href="#">Серіали</a></li>
-            <li> <a href="#">Мультфільми</a></li>
-            <li> <a href="#">Спорт</a></li>
-            <li> <a href="#">Тарифи</a></li>
+            <li class="header-btn"> <a href="#">Фільми</a></li>
+            <li class="header-btn"> <a href="#">Серіали</a></li>
+            <li class="header-btn"> <a href="#">Мультфільми</a></li>
+            <li class="header-btn"> <a href="#">Спорт</a></li>
+            <li class="header-btn"> <a href="#">Тарифи</a></li>
         </ul>
         <div class="search">
-            <h3>Пошук</h3>
-            <img class="search-img" src="images/search.svg" alt="search-img">
+            <input placeholder="Пошук"></input>
+            <img class="search-img" src="icons/search.svg" alt="search-img">
         </div>
         <div class="profile">
-            <img class="favorites-img" src="images/favoritesImg.svg" alt="favorites-img">
+            <img class="favorites-img" src="icons/heart.svg" alt="favorites-img">
             <h4 class="lang">UA</h4>
             <img class="profile-img" src="images/profileImg.png" alt="search-img">
         </div>
     </div>
     <div class="trailers-div">
-        <div class="player-div">
-            <video poster="images/DMCPoster.jpg">
-                <source src="videos/Dante.mp4">
-            </video>
-        </div>
-        <div class="player-div">
-            <div class="preview">
-
-                <h2 class="trailer-name">Диявол може плакати</h2>
-                <h5 class="trailer-desc">2025, Фантастика</h5>
-                <h5 class="age-limit">16+</h5>
-                <button id='mute' class="mute" data-state="mute"></button>
-                <a href="#"></a>
+        <div class="player-block">
+            <div class="player-div">
+                <div class="preview">
+                    <h2 class="trailer-name">Диявол може плакати</h2>
+                    <h5 class="trailer-desc">2025, Фентезі</h5>
+                    <h5 class="age-limit">16+</h5>
+                    <button id='' class="mute"></button>
+                    <a href="#"></a>
+                </div>
+                <video id="" poster="images/DMCPoster.jpg" muted loop>
+                    <source src="videos/DMC.mp4">
+                </video>
             </div>
-            <video id="video" poster="images/DMCPoster.jpg" controls autoplay muted loop>
-                <source src="videos/DMC.mp4">
-            </video>
         </div>
-        <div class="player-div">
-            <video poster="images/DMCPoster.jpg">
-                <source src="videos/Dante.mp4">
-            </video>
+
+        <div class="player-block">
+            <li class="prev-trailer-btn"><img src="icons/chevron-left.svg" alt="previous"></li>
+            <div class="player-div">
+                <div class="preview">
+                    <a href="#" class="trailer-name">Диявол може плакати</a>
+                    <h5 class="trailer-desc">2025, Фантастика</h5>
+                    <h5 class="age-limit">16+</h5>
+                    <button id='mute' class="mute"></button>
+                </div>
+                <video id="video" poster="images/DMCPoster.jpg" muted autoplay loop>
+                    <source src="videos/DMC.mp4">
+                </video>
+            </div>
+            <li class="next-trailer-btn"><img src="icons/chevron-right.svg" alt="next"></li>
+        </div>
+
+        <div class="player-block">
+            <div class="player-div">
+                <div class="preview">
+                    <h2 class="trailer-name">Диявол може плакати</h2>
+                    <h5 class="trailer-desc">2025, Фантастика</h5>
+                    <h5 class="age-limit">16+</h5>
+                    <button id='' class="mute"></button>
+                    <a href="#"></a>
+                </div>
+                <video id="" poster="images/DMCPoster.jpg" muted loop>
+                    <source src="videos/DMC.mp4">
+                </video>
+            </div>
         </div>
     </div>
     <div class="Genre-name">
@@ -179,7 +201,7 @@
         </div>
     </div>
     </div>
-    <script src="HPJS.js"></script>
+    <script src="HPJS.js" defer></script>
 </body>
 
 </html>
