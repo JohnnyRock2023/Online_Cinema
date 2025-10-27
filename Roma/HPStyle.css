@@ -26,28 +26,39 @@ body {
 }
 
 ul {
+    display: flex;
+    flex-flow: row;
     list-style: none;
-    align-content: center;
+    align-items: center;
+    overflow: hidden;
+    gap: 20px;
+    white-space: nowrap;
 }
 
 .header-btn {
-    padding: 10px 10px 10px 10px;
     font-size: 18px;
     font-weight: 700;
-    height: 35px;
-    width: 100px;
+    height: 50%;
+    width: auto;
 }
 
 li {
     align-content: center;
     text-align: center;
     cursor: pointer;
-    display: inline;
+    display: flex;
+}
+
+li a {
+    height: 100%;
+    width: 100%;
 }
 
 a {
     text-decoration: none;
-    font-size: 2vh;
+    font-size: 18px;
+    text-align: center;
+    align-content: center;
 }
 
 .search {
@@ -63,7 +74,7 @@ input {
     position: absolute;
     align-content: center;
     width: 100%;
-    font-size: 1.7vh;
+    font-size: 16px;
     border-radius: 34px;
     border: none;
     padding-left: 10px;
@@ -87,21 +98,36 @@ input {
 
 }
 
-.profile-img {
-    height: 43px;
-    width: 43px;
-    border-radius: 50px;
-}
-
 .lang {
     height: auto;
     width: auto;
 }
 
-.favorites-img {
+.profile-btn,
+.favorites-btn {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    border: none;
+    cursor: pointer;
+    color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+}
+
+.profile-btn {
+    height: 43px;
+    width: 43px;
+    border-radius: 50px;
+    background-image: url("images/profileImg.png");
+}
+
+.favorites-btn {
     width: 24px;
     height: 24px;
-    color: #fff;
+    background-image: url("icons/heart.svg");
 }
 
 .lang,
@@ -253,6 +279,18 @@ video {
     justify-content: center;
 }
 
+.film-poster {
+    position: absolute;
+    border-radius: 40px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/DMCPoster.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 h2 {
 
     height: 70px;
@@ -283,7 +321,7 @@ h2 {
 
 .film-img {
     width: 100%;
-    height: 300px;
+    height: auto;
     border-radius: 25px;
 }
 
