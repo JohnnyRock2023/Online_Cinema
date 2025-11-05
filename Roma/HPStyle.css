@@ -55,6 +55,8 @@ li a {
 }
 
 a {
+    height: auto;
+    width: auto;
     text-decoration: none;
     font-size: 18px;
     text-align: center;
@@ -279,10 +281,17 @@ video {
     padding: 0px;
     width: 100%;
     height: 100%;
-    background-image: url("images/DMCPoster.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+#right-poster {
+    background-image: url("posters/BallerinaPoster.jpg");
+}
+
+#left-poster {
+    background-image: url("posters/DantePoster.jpg");
 }
 
 .Genre-name h2 {
@@ -291,13 +300,13 @@ video {
 }
 
 .Genre-name {
-    width: 85%;
+    width: 1610px;
     height: auto;
     padding-bottom: 10px;
 }
 
 .Films {
-    width: 85%;
+    width: 1610px;
     justify-content: center;
     display: flex;
     height: auto;
@@ -310,7 +319,9 @@ video {
     width: 200px;
     border-radius: 25px;
     box-shadow: 0px 5px 10px black;
+    cursor: pointer;
 }
+
 
 .film-img {
     width: 100%;
@@ -324,6 +335,7 @@ video {
     height: auto;
     padding-top: 2px;
     padding-left: 10px;
+    text-align: left;
 }
 
 h3 {
