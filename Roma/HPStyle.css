@@ -308,6 +308,7 @@ video {
 .Films {
     width: 1610px;
     justify-content: center;
+    align-items: start;
     display: flex;
     height: auto;
     gap: 35px;
@@ -331,11 +332,13 @@ video {
 
 .card h5,
 .card h6 {
-    width: 100%;
+    width: 90%;
     height: auto;
     padding-top: 2px;
     padding-left: 10px;
+    padding-right: 10px;
     text-align: left;
+    text-wrap: initial;
 }
 
 h3 {
