@@ -15,12 +15,12 @@ body {
     display: flex;
     align-items: center;
     width: 100%;
-    height: 7%;
+    height: 70px;
     background-color: #06192E;
+    padding-left: 60px;
 }
 
 .logo {
-    margin-left: 30px;
     height: 50px;
     width: 50px;
 }
@@ -66,11 +66,20 @@ a {
 .search {
     display: flex;
     position: relative;
-    width: 25%;
-    height: 50%;
-    align-items: center;
-    justify-content: end;
+    width: 400px;
+    height: 35px;
+    flex-direction: column;
 }
+
+.search-input {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    z-index: 11;
+    height: 35px;
+}
+
 
 input {
     position: absolute;
@@ -81,13 +90,92 @@ input {
     border: none;
     padding-left: 10px;
     color: black !important;
+    outline: none;
 }
 
-.search-img {
+input:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+.search img {
     position: absolute;
     width: 20px;
     height: 20px;
     margin-right: 10px;
+
+}
+
+.suggestions {
+    position: absolute;
+    border-radius: 0px 0px 25px 25px;
+    margin-top: 17.5px;
+    padding-top: 27.5px;
+    padding-bottom: 10px;
+    z-index: 10;
+    gap: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #06192E;
+    display: none;
+    transition: 0.5s;
+}
+
+.search-btn {
+    color: black;
+    padding: 10px 0px;
+    background-color: white;
+    height: auto;
+    font-size: 17px;
+    border-radius: 10px;
+    margin: 10px 10px;
+    box-shadow: 0px 3px 7px black;
+}
+
+.suggestion {
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid;
+    border-color: black;
+    border-radius: 10px;
+    align-content: center;
+    text-align: start !important;
+    margin: 0px 10px;
+    transition: 0.25s;
+    box-shadow: 0px 3px 7px black;
+}
+
+.suggestion:hover {
+    background-color: #001e39;
+}
+
+.suggestion img {
+    position: absolute;
+    width: 50px;
+    height: 65px;
+    margin-left: 7px;
+}
+
+.suggestion h5,
+.suggestion h6 {
+    margin-left: 70px;
+    height: auto;
+    width: auto;
+}
+
+.suggestion h5 {
+    margin-top: 10px;
+}
+
+.suggestion h6 {
+    margin-top: 5px;
+    margin-bottom: 25px;
 }
 
 .profile {
@@ -321,6 +409,11 @@ video {
     border-radius: 25px;
     box-shadow: 0px 5px 10px black;
     cursor: pointer;
+    transition: 0.5s;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 
