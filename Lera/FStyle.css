@@ -2,6 +2,7 @@
     margin: 0;
     width: 100%;
     height: 100%;
+    box-sizing: border-box;
 }
 
 body {
@@ -30,9 +31,7 @@ ul {
     flex-flow: row;
     list-style: none;
     align-items: center;
-    overflow: hidden;
     gap: 20px;
-    white-space: nowrap;
 }
 
 .header-btn {
@@ -189,6 +188,7 @@ input:focus {
 
 }
 
+
 .lang {
     height: auto;
     width: auto;
@@ -214,13 +214,14 @@ input:focus {
     height: 43px;
     width: 43px;
     border-radius: 50px;
-    background-image: url("images/profileImg.png");
+    margin-right: 20px;
+    background-image: url("/images/profileImg.png");
 }
 
 .favorites-btn {
     width: 24px;
     height: 24px;
-    background-image: url("icons/heart.svg");
+    background-image: url("/icons/heart.svg");
 }
 
 .lang,
@@ -251,13 +252,12 @@ a {
 }
 
 .Films {
-    width: 1140px;
+    width: 1610px;
     justify-content: center;
     align-items: start;
     display: flex;
     height: auto;
     gap: 35px;
-    margin: 0 auto 40px auto;
 }
 
 .card {
@@ -268,7 +268,6 @@ a {
     box-shadow: 0px 5px 10px black;
     cursor: pointer;
     transition: 0.5s;
-    background-color: #06192E;
 }
 
 .card:hover {
@@ -358,19 +357,19 @@ h6 {
 /*-------------------------------------------------*/
 
 .instagram {
-    background-image: url("icons/instagram.svg");
+    background-image: url("/icons/instagram.svg");
 }
 
 .telegram {
-    background-image: url("icons/telegram.svg");
+    background-image: url("/icons/telegram.svg");
 }
 
 .X {
-    background-image: url("icons/X.svg");
+    background-image: url("/icons/X.svg");
 }
 
 .facebook {
-    background-image: url("icons/facebook.svg");
+    background-image: url("/icons/facebook.svg");
 }
 
 /*-------------------------------------------------*/
