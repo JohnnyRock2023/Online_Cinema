@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="FilmStyle.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <title>Фільм - Tkachenko Cinema</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <a href="/Roma/HomePage.html">
+            <img class="logo" src="images/logo.png" alt="logo">
+        </a>
+        <ul>
+            <li class="header-btn"> <a href="#">Фільми</a></li>
+            <li class="header-btn"> <a href="#">Серіали</a></li>
+            <li class="header-btn"> <a href="#">Мультфільми</a></li>
+            <li class="header-btn"> <a href="#">Спорт</a></li>
+            <li class="header-btn"> <a href="#">Тарифи</a></li>
+        </ul>
+        <div class="search" id="search">
+            <div class="search-input" id="search-input">
+                <input placeholder="Пошук" id="input">
+                <img class="search-img" src="../Roma/icons/search.svg" alt="search-img">
+            </div>
+            <div class="suggestions" id="suggestions">
+                <a href="#">
+                    <div class="suggestion">
+                        <img src="/Roma/images/1.1.png" alt="">
+                        <h5>Поганці 2</h5>
+                        <h6>2025, Сімейні</h6>
+                    </div>
+                </a>
+                <a class="search-btn" href="../Roma/SearchPage.html">Розширений пошук</a>
+            </div>
+        </div>
+        <div class="profile">
+            <a class="favorites-btn" href="../Lera/Favorites.html"></a>
+            <h4 class="lang">UA</h4>
+            <a class="profile-btn" href="../Lera/Profile.html"></a>
+        </div>
+    </div>
+
+    <!-- ОСНОВНИЙ КОНТЕНТ СТОРІНКИ ФІЛЬМУ -->
+    <div class="movie-container">
+        
+        <!-- 1. Hero / Плеєр -->
+        <div class="film-hero">
+            <img src="images/main.png" class="hero-bg-img" alt="">
+            <div class="hero-overlay"></div>
+            
+            <!-- Кнопка Play по центру -->
+            <div class="play-btn-center">
+                <button class="play-btn-center">
+                    <img src="icons/play.svg" alt="play">
+                </button>
+            </div>
+
+            <!-- Інформація на постері -->
+            <div class="hero-info">
+                <h1 class="hero-title">Віднесені привидами</h1>
+                <div class="hero-meta">
+                    <span>12+</span>
+                    <span>125 хв</span>
+                    <span>IMDB: 8.8</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. Кнопки дій під постером (З ID для JS) -->
+        <div class="action-buttons">
+            <button class="action-btn" id="like-btn">
+                <img src="icons/like.svg" alt="like">
+            </button>
+            <button class="action-btn" id="dislike-btn">
+                <img src="icons/dis.svg" alt="dislike">
+            </button>
+            <button class="action-btn" id="heart-btn">
+                <img src="icons/love.svg" alt="heart">
+            </button>
+        </div>
+        <div class="details-grid">
+            <div class="left-column">
+                <div class="info-card about-card">
+                    <h3>Про фільм</h3>
+                    <div class="film-meta-line">
+                        2001 &nbsp;&nbsp; Японія &nbsp;&nbsp; Хаяо Міядзакі &nbsp;&nbsp; Анімація, сімейний
+                    </div>
+                    <div class="film-description">
+                        Маленька Чіхіро разом з мамою і татом переїжджають в новий будинок. Заблукавши по дорозі, вони опиняються в дивному пустинному місті, де їх чекає прекрасний бенкет. Батьки з жадністю накидаються на їжу і перетворюються на свиней, ставши полоненими злої чаклунки Юбаби. Тепер, опинившись одна серед магічних істот, відважна Чіхіро повинна придумати, як позбавити своїх батьків від чар підступної старої і врятуватися з лякаючого царства примар.
+                    </div>
+                    <span class="more-link">більше...</span>
+                </div>
+
+                <div class="info-card languages-card">
+                    <h3>Доступні мови:</h3>
+                    <div class="lang-item">
+                        <span class="lang-label">Японська (оригінал), українська, англійська</span>
+                    </div>
+                    <div class="lang-item" style="margin-top: 15px;">
+                        <span class="lang-label">Субтитри:</span> українська, англійська
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-card actors-card">
+                <h3>Актори:</h3>
+                <ul class="actor-list">
+                    <li class="actor-item">Мію Іріно</li>
+                    <li class="actor-item">Румі Хіірагі</li>
+                    <li class="actor-item">Марі Нацукі</li>
+                    <li class="actor-item">Такасі Найто</li>
+                    <li class="actor-item">Ясуко Савагучі</li>
+                    <li class="actor-item">Тацуя Гасюін</li>
+                    <li class="actor-item">Рюносуке Камікі</li>
+                    <li class="actor-item">Юмі Тамаі</li>
+                    <li class="actor-item">Йо Ойдзумі</li>
+                    <li class="actor-item">Бунта Сугавара</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="Genre-name">
+            <h2>Схожі</h2>
+        </div>
+        <div class="Films">
+
+            <a href="#">
+                <div class="card">
+                    <img class="film-img" src="images/same1.png" alt="Мандрівний замок">
+                    <h5>Мандрівний замок</h5>
+                    <h6>2004, Мультфільм</h6>
+                </div>
+            </a>
+  
+            <a href="#">
+                <div class="card">
+                    <img class="film-img" src="images/same2.png" alt="Мій сусід Тоторо">
+                    <h5>Мій сусід Тоторо</h5>
+                    <h6>1988, Мультфільм</h6>
+                </div>
+            </a>
+      
+            <a href="#">
+                <div class="card">
+                    <img class="film-img" src="images/same3.png" alt="Рибка Поньо">
+                    <h5>Рибка Поньо</h5>
+                    <h6>2008, Мультфільм</h6>
+                </div>
+            </a>
+       
+            <a href="#">
+                <div class="card">
+                    <img class="film-img" src="images/same4.png" alt="Кілер сьомий">
+                    <h5>Кілер сьомий</h5>
+                    <h6>2020, Мультфільм</h6>
+                </div>
+            </a>
+         
+            <a href="#">
+                <div class="card">
+                    <img class="film-img" src="images/same5.png" alt="Відьмина служба">
+                    <h5>Відьмина служба</h5>
+                    <h6>1989, Мультфільм</h6>
+                </div>
+            </a>
+        
+            <a href="#">
+                <div class="card">
+                    <img class="film-img" src="images/same6.png" alt="Мулан">
+                    <h5>Мулан</h5>
+                    <h6>1998, Мультфільми</h6>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="card">
+                    <img class="film-img" src="images/same7.png" alt="Волл-І">
+                    <h5>Волл-І</h5>
+                    <h6>2008, Мультфільми</h6>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="footer-block">
+            <img src="images/logo.png" alt="">
+            <h2>Tkachenko Cinemas</h2>
+            <h5>Знайди нас у соцмережах</h5>
+            <div class="social-btn">
+                <a class="instagram" href="#"></a>
+                <a class="telegram" href="#"></a>
+                <a class="X" href="#"></a>
+                <a class="facebook" href="#"></a>
+            </div>
+        </div>
+        <div class="footer-block">
+            <h3>Користувачам і партнерам</h3>
+            <div class="link"><a href="#">Усе про передплати </a></div>
+            <div class="link"><a href="#">Угода користувача </a></div>
+            <div class="link"><a href="#">Політика конфіденційності </a></div>
+            <div class="link"><a href="#">Про нас </a></div>
+            <div class="link"><a href="#">Способи оплати </a></div>
+            <div class="link"><a href="#">Доступність </a></div>
+        </div>
+        <div class="footer-block">
+            <h3>На пристроях</h3>
+            <div class="link"><a href="#">Телевізори </a></div>
+            <div class="link"><a href="#">Мобільні пристої </a></div>
+            <div class="link"><a href="#">Комп'ютер </a></div>
+        </div>
+        <div class="footer-block">
+            <h3>Підтримка користувачів</h3>
+            <div class="link"><a href="#">Усі контакти </a></div>
+            <div class="link"><a href="#">Питання та відповіді </a></div>
+            <h6>Безкоштовно</h6>
+            <h5>0 700 70 77 77</h5>
+            <h6>Згідно тарифів вашого оператора</h6>
+            <h5>+380 98 888 88 88</h5>
+            <h5>+380 67 999 99 99</h5>
+            <h5>supporttkachenko@gmail.com</h5>
+        </div>
+    </div>
+</body>
+</html>
