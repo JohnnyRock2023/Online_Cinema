@@ -231,7 +231,7 @@ input:focus {
     height: 43px;
     width: 43px;
     border-radius: 50px;
-    background-image: url("/images/profileImg.png");
+    background-image: url("/images/foto.png");
     background-color: #ccc;
 }
 
@@ -426,223 +426,219 @@ h6 {
     opacity: 1;
 }
 
-.movie-container {
-    width: 100%;
+.profile-page-container {
+    width: 1610px; 
+    max-width: 95%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     height: auto;
-}
-
-/* --- HERO SECTION --- */
-.film-hero {
-    position: relative;
-    width: 100vw;
-    height: 85vh;
-    overflow: hidden;
-    margin-bottom: 20px;
-}
-
-.hero-bg-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-}
-
-.hero-overlay {
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background: linear-gradient(to top, #001e39 5%, rgba(0,0,0,0) 40%, rgba(0,0,0,0.4) 100%);
-    z-index: 1;
-}
-
-.play-btn-center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    background: none;
-    border: none;
-    cursor: pointer;
-    width: auto;
-    height: auto;
-}
-
-.play-btn-center img {
-    width: 80px;
-    height: 80px;
-    filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
-    transition: transform 0.3s;
-}
-
-.play-btn-center img:hover {
-    transform: scale(1.1);
-}
-
-.hero-info {
-    position: absolute;
-    bottom: 50px;
-    right: 60px;
-    text-align: right;
-    z-index: 2;
-    width: auto;
-    height: auto;
-}
-
-.hero-title {
-    font-size: 40px;
-    font-weight: 600; 
-    margin-bottom: 15px;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
-    height: auto;
-}
-
-.hero-meta {
-    display: flex;
-    justify-content: flex-end;
-    gap: 20px;
-    font-size: 24px;
-    font-weight: 600; 
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
-    height: auto;
-}
-.hero-meta span {
-    width: auto;
-}
-
-.action-buttons {
-    width: 1610px;
-    max-width: 95%;
-    display: flex;
-    gap: 20px;
-    margin-bottom: 30px;
-    padding-left: 10px;
-    z-index: 2;
-    height: auto;
-}
-
-.action-btn {
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    width: 60px;
-    height: 60px;
-    transition: transform 0.2s;
-}
-
-.action-btn img {
-    width: 100%;
-    height: 100%;
-}
-
-.action-btn:hover {
-    transform: scale(1.1);
-}
-
-.details-grid {
-    width: 1610px;
-    max-width: 95%;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 20px;
+    margin-top: 40px;
     margin-bottom: 60px;
-    height: auto; 
 }
 
-.left-column {
+
+.user-profile-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 29, 57, 0.94); 
+    padding: 40px;
+    border-radius: 25px; 
+    margin-bottom: 40px;
+}
+
+.avatar-container {
+    width: auto;
+    height: auto;
+    margin-right: 40px;
+}
+
+.profile-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-info {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    justify-content: center;
+    width: auto;
     height: auto;
 }
 
-.info-card {
+.user-name {
+    font-family: "Inter", sans-serif;
+    font-weight: 500; 
+    font-size: 48px;
+    color: white;
+    margin-bottom: 10px;
+    height: auto;
+    width: auto;
+}
+
+.user-subscription-status {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: white;
+    height: auto;
+    width: auto;
+}
+
+.welcome-section {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    padding-left: 20px; 
+}
+
+.welcome-section h2 {
+    font-family: "Inter", sans-serif;
+    font-weight: 400; 
+    font-size: 32px;
+    margin-bottom: 20px;
+    height: auto;
+    width: auto;
+}
+
+.welcome-text {
+    height: auto;
+    width: auto;
+}
+
+.welcome-text p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400; 
+    font-size: 32px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    height: auto;
+    width: auto;
+    color: white;
+}
+
+.subscription-plans-section {
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.plans-title {
+    font-family: "Inter", sans-serif;
+    font-weight: bold; 
+    font-size: 48px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    height: auto;
+    width: auto;
+}
+
+.plans-grid {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap; 
+}
+
+.plan-card {
+    flex: 1; 
+    min-width: 300px;
     border-radius: 25px;
     padding: 30px;
     color: white;
-    box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
-    height: auto;
-    width: auto;
-}
-
-.info-card h3 {
-    font-size: 32px;
-    font-weight: 700; 
-    margin-bottom: 15px;
-    height: auto;
-}
-
-.film-meta-line {
-    font-weight: 600; 
-    margin-bottom: 20px;
-    font-size: 22px;
-    opacity: 0.9;
-    height: auto;
-}
-
-.film-description {
-    line-height: 1.5;
-    font-size: 22px;
-    font-weight: 500;
-    margin-bottom: 15px;
-    height: auto;
-    width: auto;
-}
-
-.more-link {
-    font-weight: bold;
-    cursor: pointer;
-    height: auto;
-    width: auto;
-}
-
-.about-card {
-    background-color: #A5DFFF;
-    opacity: 0.9;
-    color: white;
-    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
-}
-
-.languages-card {
-    background-color: #8C81FF;
-    opacity: 1;
-}
-
-.lang-item {
-    margin-bottom: 10px;
-    height: auto;
-    font-size: 22px;
-    font-weight: 600; 
-}
-
-.lang-label {
-    font-size: 24px;
-    font-weight: 700; 
-}
-
-.actors-card {
-    background-color: #FF689F;
-    opacity: 1;
-    height: 100%;
-}
-
-.actor-list {
-    list-style: none;
-    padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    justify-content: space-between;
+    height: auto;
+    min-height: 500px; 
+    width: auto;
+}
+
+.student-plan {
+    background-color: rgba(165, 223, 255, 0.9); 
+    color: white;
+}
+
+.standard-plan {
+    background-color: #FF689F; 
+}
+
+.family-plan {
+    background-color: #8C81FF; 
+}
+
+.plan-card h3 {
+    font-family: "Inter", sans-serif;
+    font-weight: bold; 
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
     height: auto;
 }
 
-
-.actor-item {
-    font-size: 24px;
-    font-weight: 700; 
+.plan-features {
+    display: block; 
+    list-style: disc; 
+    padding-left: 40px; 
+    margin-bottom: 20px;
+    flex-grow: 1; 
     height: auto;
+    width: auto;
+    white-space: normal; 
+    word-wrap: break-word;
+}
+
+.plan-features li {
+    font-family: "Inter", sans-serif;
+    font-weight: 500; 
+    font-size: 24px;
+    margin-bottom: 10px;
+    display: list-item; 
+    text-align: left;
+    height: auto;
+    width: auto;
+    white-space: normal;
+}
+
+.plan-note {
+    font-size: 16px;
+    margin-bottom: 10px;
+    opacity: 0.9;
+    height: auto;
+    width: auto;
+}
+
+.plan-price {
+    font-family: "Inter", sans-serif;
+    font-weight: 500; /* Medium */
+    font-size: 36px;
+    margin-bottom: 25px;
+    text-align: center;
+    height: auto;
+    width: auto;
+}
+
+.plan-btn {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 0;
+    font-family: "Inter", sans-serif;
+    font-weight: bold; 
+    font-size: 24px;
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    transition: transform 0.2s;
+}
+
+.plan-btn:hover {
+    transform: scale(1.02);
 }
