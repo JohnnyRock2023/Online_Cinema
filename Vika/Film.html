@@ -16,9 +16,9 @@
 
 <body>
 
-    <div class="header">
+     <div class="header">
         <a href="/Roma/HomePage.html">
-            <img class="logo" src="images/logo.png" alt="logo">
+            <img class="logo" src="/images/logo.png" alt="logo">
         </a>
         <ul>
             <li class="header-btn"> <a href="#">Фільми</a></li>
@@ -33,11 +33,32 @@
                 <img class="search-img" src="/icons/search.svg" alt="search-img">
             </div>
             <div class="suggestions" id="suggestions">
-                <a href="#">
+                <a href="/Vika/Film.html">
                     <div class="suggestion">
-                        <img src="/Roma/images/1.1.png" alt="">
+                        <img src="/images/1.1.png" alt="">
                         <h5>Поганці 2</h5>
                         <h6>2025, Сімейні</h6>
+                    </div>
+                </a>
+                <a href="/Vika/Film.html">
+                    <div class="suggestion">
+                        <img src="/images/1.2.png" alt="">
+                        <h5>Балерина</h5>
+                        <h6>2025, Екшн</h6>
+                    </div>
+                </a>
+                <a href="/Vika/Film.html">
+                    <div class="suggestion">
+                        <img src="/images/1.3.png" alt="">
+                        <h5>Місія неможлива: Фінальна розплата</h5>
+                        <h6>2025, Екшн</h6>
+                    </div>
+                </a>
+                <a href="/Vika/Film.html">
+                    <div class="suggestion">
+                        <img src="/images/1.4.png" alt="">
+                        <h5>Як приборкати дракона</h5>
+                        <h6>2025, Екшн</h6>
                     </div>
                 </a>
                 <a class="search-btn" href="/Roma/SearchPage.html">Розширений пошук</a>
@@ -46,26 +67,18 @@
         <div class="profile">
             <a class="favorites-btn" href="/Lera/Favorites.html"></a>
             <h4 class="lang">UA</h4>
-            <a class="profile-btn" href="../Lera/Profile.html"></a>
+            <a class="profile-btn" href="/Lera/Profile.html"></a>
         </div>
     </div>
-
-    <!-- ОСНОВНИЙ КОНТЕНТ СТОРІНКИ ФІЛЬМУ -->
     <div class="movie-container">
-        
-        <!-- 1. Hero / Плеєр -->
         <div class="film-hero">
             <img src="images/main.png" class="hero-bg-img" alt="">
             <div class="hero-overlay"></div>
-            
-            <!-- Кнопка Play по центру -->
             <div class="play-btn-center">
                 <button class="play-btn-center">
                     <img src="icons/play.svg" alt="play">
                 </button>
             </div>
-
-            <!-- Інформація на постері -->
             <div class="hero-info">
                 <h1 class="hero-title">Віднесені привидами</h1>
                 <div class="hero-meta">
@@ -76,7 +89,6 @@
             </div>
         </div>
 
-        <!-- 2. Кнопки дій під постером (З ID для JS) -->
         <div class="action-buttons">
             <button class="action-btn" id="like-btn">
                 <img src="icons/like.svg" alt="like">
@@ -192,11 +204,9 @@
         </div>
 
     </div>
-
-    <!-- FOOTER -->
     <div class="footer">
         <div class="footer-block">
-            <img src="images/logo.png" alt="">
+            <img src="/images/logo.png" alt="">
             <h2>Tkachenko Cinemas</h2>
             <h5>Знайди нас у соцмережах</h5>
             <div class="social-btn">
@@ -208,23 +218,45 @@
         </div>
         <div class="footer-block">
             <h3>Користувачам і партнерам</h3>
-            <div class="link"><a href="#">Усе про передплати </a></div>
-            <div class="link"><a href="#">Угода користувача </a></div>
-            <div class="link"><a href="#">Політика конфіденційності </a></div>
-            <div class="link"><a href="#">Про нас </a></div>
-            <div class="link"><a href="#">Способи оплати </a></div>
-            <div class="link"><a href="#">Доступність </a></div>
+            <div class="link">
+                <a href="#">Усе про передплати </a>
+            </div>
+            <div class="link">
+                <a href="#">Угода користувача </a>
+            </div>
+            <div class="link">
+                <a href="#">Політика конфіденційності </a>
+            </div>
+            <div class="link">
+                <a href="#">Про нас </a>
+            </div>
+            <div class="link">
+                <a href="#">Способи оплати </a>
+            </div>
+            <div class="link">
+                <a href="#">Доступність </a>
+            </div>
         </div>
         <div class="footer-block">
             <h3>На пристроях</h3>
-            <div class="link"><a href="#">Телевізори </a></div>
-            <div class="link"><a href="#">Мобільні пристої </a></div>
-            <div class="link"><a href="#">Комп'ютер </a></div>
+            <div class="link">
+                <a href="#">Телевізори </a>
+            </div>
+            <div class="link">
+                <a href="#">Мобільні пристої </a>
+            </div>
+            <div class="link">
+                <a href="#">Комп'ютер </a>
+            </div>
         </div>
         <div class="footer-block">
             <h3>Підтримка користувачів</h3>
-            <div class="link"><a href="#">Усі контакти </a></div>
-            <div class="link"><a href="#">Питання та відповіді </a></div>
+            <div class="link">
+                <a href="#">Усі контакти </a>
+            </div>
+            <div class="link">
+                <a href="#">Питання та відповіді </a>
+            </div>
             <h6>Безкоштовно</h6>
             <h5>0 700 70 77 77</h5>
             <h6>Згідно тарифів вашого оператора</h6>
@@ -233,5 +265,6 @@
             <h5>supporttkachenko@gmail.com</h5>
         </div>
     </div>
+    <script src="SP.js" defer></script>
 </body>
 </html>
