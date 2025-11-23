@@ -7,7 +7,7 @@ var nextTrailerBtn = document.getElementById("next-trailer-btn");
 
 function changeButtonState(type) {
     if (type === "mute") {
-        mute.style.backgroundImage = video.muted ? 'url("icons/muted.png"' : 'url("icons/unmuted.png")';
+        mute.style.backgroundImage = video.muted ? 'url("/icons/muted.png"' : 'url("/icons/unmuted.png")';
     }
 }
 
