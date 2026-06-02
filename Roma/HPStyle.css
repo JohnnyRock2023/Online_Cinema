@@ -547,3 +547,167 @@ h6 {
 .link a:hover {
     opacity: 1;
 }
+
+
+@media (max-width: 768px) {
+
+    * {
+        height: auto;
+        width: auto;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .header {
+        height: 60px;
+        padding-left: 15px;
+        padding-right: 15px;
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 35px;
+        height: 35px;
+    }
+
+    ul {
+        gap: 10px;
+    }
+
+    ul li a {
+        font-size: 14px;
+    }
+
+    .search {
+        width: 160px;
+        /* було 400px */
+        height: 30px;
+    }
+
+    input {
+        font-size: 14px;
+        padding-left: 8px;
+    }
+
+    .search img {
+        width: 16px;
+        height: 16px;
+        margin-right: 8px;
+    }
+
+    .profile {
+        margin-left: 10px;
+        margin-right: 0;
+        gap: 10px;
+        width: auto;
+    }
+
+    .profile-btn {
+        width: 35px;
+        height: 35px;
+        margin-right: 10px;
+    }
+
+    .favorites-btn {
+        width: 20px;
+        height: 20px;
+    }
+
+    .lang {
+        font-size: 14px;
+    }
+
+    /* PLAYER BLOCK */
+    .player-block {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .prev-trailer-btn,
+    .next-trailer-btn {
+        display: none;
+    }
+
+    .player-div {
+        width: 95%;
+        height: 250px;
+        border-radius: 30px;
+    }
+
+    .trailer-name {
+        font-size: 20px;
+        bottom: 20%;
+    }
+
+    .trailer-desc {
+        font-size: 14px;
+        bottom: 10%;
+    }
+
+    .age-limit {
+        font-size: 14px;
+        right: 5%;
+        top: 5%;
+    }
+
+    .mute {
+        right: 5%;
+        bottom: 5%;
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+
+    /* FILM CARDS */
+    .Genre-name {
+        width: 100%;
+        text-align: center;
+    }
+
+    .Films {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .card {
+        width: 140px;
+    }
+
+    .card h5 {
+        font-size: 14px;
+    }
+
+    .card h6 {
+        font-size: 12px;
+    }
+
+    /* FOOTER */
+    .footer {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .footer-block {
+        padding: 0;
+    }
+
+    .footer-block div {
+        justify-content: center;
+    }
+
+    .social-btn a {
+        width: 25px;
+        height: 25px;
+    }
+
+    .footer-block img {
+        margin: 0 auto 20px;
+    }
+}

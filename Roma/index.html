@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="FStyle.css">
+    <link rel="stylesheet" href="/Roma/HPStyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
     <title>Tkachenko Cinema</title>
 </head>
 
 <body>
-
     <div class="header">
         <a href="/index.html">
             <img class="logo" src="/images/logo.png" alt="logo">
@@ -70,127 +69,199 @@
             <a class="profile-btn" href="/Lera/Profile.html"></a>
         </div>
     </div>
+    <div class="trailers-div">
+        <div class="player-block">
+            <div class="player-div">
+                <div id="left-poster" class="film-poster">
+                </div>
+            </div>
+        </div>
 
-    <!-- ОСНОВНИЙ КОНТЕНТ СТОРІНКИ "УЛЮБЛЕНІ" -->
-    <div class="Genre-name">
-        <h2>Улюблені</h2>
+        <div class="player-block">
+            <li id="prev-trailer-btn" class="prev-trailer-btn"><img src="/icons/chevron-left.svg" alt="previous"></li>
+            <div class="player-div">
+                <div class="preview">
+                    <a href="#" id="curr-trailer-name" class="trailer-name">Диявол може плакати</a>
+                    <h5 id="curr-trailer-desc" class="trailer-desc">2025, Фантастика</h5>
+                    <h5 id="curr-trailer-limit" class="age-limit">16+</h5>
+                    <button id='mute' class="mute"></button>
+                </div>
+                <video id="video" src="videos/DMC.mp4" muted autoplay poster="/Roma/posters/DMCPoster.jpg"></video>
+            </div>
+            <li id="next-trailer-btn" class="next-trailer-btn"><img src="/icons/chevron-right.svg" alt="next"></li>
+        </div>
+
+        <div class="player-block">
+            <div class="player-div">
+                <div id="right-poster" class="film-poster">
+                    <h2 id="right-trailer-name" class="trailer-name">Балерина</h2>
+                    <h5 id="right-trailer-desc" class="trailer-desc">2025, Екшн</h5>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <!-- Блок Улюблені Фільми -->
     <div class="Genre-name">
-        <h3>Фільми</h3>
+        <h2>Прем'єри</h2>
     </div>
     <div class="Films">
         <a href="/Vika/Film.html">
             <div class="card">
-                <img class="film-img" src="/images/favorites/fav-1.png" alt="">
-                <h5>Назад у майбутнє</h5>
-                <h6>1985, Фантастика</h6>
+                <img class="film-img" src="/images/1.1.png" alt="">
+                <h5>Поганці 2</h5>
+                <h6>2025, Сімейні</h6>
             </div>
         </a>
         <a href="/Vika/Film.html">
             <div class="card">
-                <img class="film-img" src="/images/favorites/fav-2.png" alt="">
-                <h5>Втеча з Шоушенка</h5>
-                <h6>1994, Драма, Кримінал</h6>
+                <img class="film-img" src="/images/1.2.png" alt="">
+                <h5>Балерина</h5>
+                <h6>2025, Екшн</h6>
             </div>
         </a>
         <a href="/Vika/Film.html">
             <div class="card">
-                <img class="film-img" src="/images/favorites/fav-3.png" alt="">
-                <h5>Бійцівський клуб</h5>
-                <h6>1999, Фільми, Драма</h6>
+                <img class="film-img" src="/images/1.3.png" alt="">
+                <h5>Місія неможлива: Фінальна розплата</h5>
+                <h6>2025, Екшн</h6>
             </div>
         </a>
         <a href="/Vika/Film.html">
             <div class="card">
-                <img class="film-img" src="/images/favorites/fav-4.png" alt="">
-                <h5>Початок</h5>
-                <h6>2010, Екшн, Триллери, Фантастика</h6>
+                <img class="film-img" src="/images/1.4.png" alt="">
+                <h5>Як приборкати дракона</h5>
+                <h6>2025, Екшн</h6>
             </div>
         </a>
         <a href="/Vika/Film.html">
             <div class="card">
-                <img class="film-img" src="/images/favorites/fav-5.png" alt="">
-                <h5>Матриця</h5>
-                <h6>1999, Екшн, Фантастика</h6>
+                <img class="film-img" src="/images/1.5.png" alt="">
+                <h5>До світанку</h5>
+                <h6>2025, жахи</h6>
             </div>
         </a>
         <a href="/Vika/Film.html">
             <div class="card">
-                <img class="film-img" src="/images/favorites/fav-6.png" alt="">
-                <h5>Мовчання Ягнят</h5>
-                <h6>1991, Драми, Кримінал, Триллери</h6>
+                <img class="film-img" src="/images/2.1.png" alt="">
+                <h5>Новокаїн</h5>
+                <h6>2025, Екшн</h6>
             </div>
         </a>
         <a href="/Vika/Film.html">
             <div class="card">
-                <img class="film-img" src="/images/favorites/fav-7.png" alt="">
-                <h5>Врятувати рядового Раяна</h5>
-                <h6>1998, Екшн, Військові, Історичні</h6>
+                <img class="film-img" src="/images/2.5.png" alt="">
+                <h5>Ліло і Стіч</h5>
+                <h6>2025, Комедія</h6>
             </div>
         </a>
     </div>
-
-
     <div class="Genre-name">
-        <h3>Мультфільми</h3>
+        <h2>Найпопулярніші фільми</h2>
     </div>
     <div class="Films">
         <a href="/Vika/Film.html">
             <div class="card">
-                <img class="film-img" src="/images/favorites/fav-11.png" alt="">
-                <h5>Тачки</h5>
-                <h6>2006, Мультфільми</h6>
+                <img class="film-img" src="/images/2.1.png" alt="">
+                <h5>Новокаїн</h5>
+                <h6>2025, Екшн</h6>
             </div>
         </a>
         <a href="/Vika/Film.html">
             <div class="card">
-                <img class="film-img" src="/images/favorites/fav-12.png" alt="">
-                <h5>Крижане серце</h5>
-                <h6>2013, Мультфільм</h6>
+                <img class="film-img" src="/images/2.2.png" alt="">
+                <h5>Гладіатор 2</h5>
+                <h6>2024, Екшн</h6>
             </div>
         </a>
         <a href="/Vika/Film.html">
             <div class="card">
-                <img class="film-img" src="/images/favorites/fav-13.png" alt="">
-                <h5>Монстри на канікулах</h5>
-                <h6>2012, Мультфільм</h6>
+                <img class="film-img" src="/images/2.3.png" alt="">
+                <h5>Джунглі</h5>
+                <h6>2017, Пригоди</h6>
             </div>
         </a>
         <a href="/Vika/Film.html">
             <div class="card">
-                <img class="film-img" src="/images/favorites/fav-14.png" alt="">
-                <h5>Рапунцель</h5>
-                <h6>2010, Мультфільм</h6>
+                <img class="film-img" src="/images/2.4.png" alt="">
+                <h5>Балерина</h5>
+                <h6>2025, Екшн</h6>
             </div>
         </a>
         <a href="/Vika/Film.html">
             <div class="card">
-                <img class="film-img" src="/images/favorites/fav-15.png" alt="">
+                <img class="film-img" src="/images/2.5.png" alt="">
+                <h5>Ліло і Стіч</h5>
+                <h6>2025, Комедія</h6>
+            </div>
+        </a>
+        <a href="/Vika/Film.html">
+            <div class="card">
+                <img class="film-img" src="/images/2.6.png" alt="">
+                <h5>Поганці</h5>
+                <h6>2025, Мультфільми</h6>
+            </div>
+        </a>
+        <a href="/Vika/Film.html">
+            <div class="card">
+                <img class="film-img" src="/images/2.7.png" alt="">
                 <h5>Панда Кунг-Фу</h5>
-                <h6>2008, Мультфільм</h6>
+                <h6>2008, Мультфільми</h6>
             </div>
         </a>
-        <a href="/Vika/Film.html">
-            <div class="card">
-                <img class="film-img" src="/images/favorites/fav-16.png" alt="">
-                <h5>Корпорація Монстрів</h5>
-                <h6>2001, Мультфільм</h6>
-            </div>
-        </a>
-        <a href="/Vika/Film.html">
-            <div class="card">
-                <img class="film-img" src="/images/favorites/fav-18.png" alt="">
-                <h5>Нікчемний Я</h5>
-                <h6>2010, Мультфільм</h6>
-            </div>
-        </a>
-
-
     </div>
-
-
+    <div class="Genre-name">
+        <h2>Найпопулярніші cеріали</h2>
+    </div>
+    <div class="Films">
+        <a href="/Vika/Film.html">
+            <div class="card">
+                <img class="film-img" src="/images/3.1.png" alt="">
+                <h5>Доктор Гаус</h5>
+                <h6>2004-2012, Драма</h6>
+            </div>
+        </a>
+        <a href="/Vika/Film.html">
+            <div class="card">
+                <img class="film-img" src="/images/3.2.png" alt="">
+                <h5>Хлопаки</h5>
+                <h6>2019-2024, Драма</h6>
+            </div>
+        </a>
+        <a href="/Vika/Film.html">
+            <div class="card">
+                <img class="film-img" src="/images/3.3.png" alt="">
+                <h5>Шерлок</h5>
+                <h6>2010-2017, Містерія</h6>
+            </div>
+        </a>
+        <a href="/Vika/Film.html">
+            <div class="card">
+                <img class="film-img" src="/images/3.4.png" alt="">
+                <h5>Король Талси</h5>
+                <h6>2022-2024, Кримінал</h6>
+            </div>
+        </a>
+        <a href="/Vika/Film.html">
+            <div class="card">
+                <img class="film-img" src="/images/3.5.png" alt="">
+                <h5>Чорнобиль</h5>
+                <h6>2019, Драма</h6>
+            </div>
+        </a>
+        <a href="/Vika/Film.html">
+            <div class="card">
+                <img class="film-img" src="/images/3.6.png" alt="">
+                <h5>Кілер сьомий</h5>
+                <h6>2020-2025, Мультсеріали</h6>
+            </div>
+        </a>
+        <a href="/Vika/Film.html">
+            <div class="card">
+                <img class="film-img" src="/images/3.7.png" alt="">
+                <h5>Леон-кілер</h5>
+                <h6>1994, Драми, Кримінал</h6>
+            </div>
+        </a>
+    </div>
     <div class="footer">
         <div class="footer-block">
             <img src="/images/logo.png" alt="">
@@ -252,6 +323,7 @@
             <h5>supporttkachenko@gmail.com</h5>
         </div>
     </div>
-
-    <script src="FPJS.js" defer></script>
+    <script src="HPJS.js" defer></script>
 </body>
+
+</html>
