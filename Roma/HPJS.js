@@ -30,8 +30,8 @@ function nextTrailer() {
     else {
         i++;
     }
-    video.setAttribute('src', 'videos/' + videos[i].vidName + '.mp4');
-    video.setAttribute('poster', 'posters/' + videos[i].poster + '.jpg')
+    video.setAttribute('src', 'Roma/videos/' + videos[i].vidName + '.mp4');
+    video.setAttribute('poster', 'Roma/posters/' + videos[i].poster + '.jpg')
     video.load();
     changePosters();
 }
@@ -54,8 +54,8 @@ function changePosters() {
     if (r > videos.length - 1) {
         r = 0;
     }
-    leftPoster.style.backgroundImage = `url("posters/${videos[l].poster + ".jpg"}")`;
-    rightPoster.style.backgroundImage = `url("posters/${videos[r].poster + ".jpg"}")`;
+    leftPoster.style.backgroundImage = `url("Roma/posters/${videos[l].poster + ".jpg"}")`;
+    rightPoster.style.backgroundImage = `url("Roma/posters/${videos[r].poster + ".jpg"}")`;
     rightTrailerName.textContent = videos[r].name;
     rightTrailerDesc.textContent = videos[r].desc;
     currTrailerName.textContent = videos[i].name;
@@ -72,8 +72,8 @@ prevTrailerBtn.addEventListener("click", () => {
     else {
         i--;
     }
-    video.setAttribute('src', 'videos/' + videos[i].vidName + '.mp4');
-    video.setAttribute('poster', 'posters/' + videos[i].poster + '.jpg')
+    video.setAttribute('src', 'Roma/videos/' + videos[i].vidName + '.mp4');
+    video.setAttribute('poster', 'Roma/posters/' + videos[i].poster + '.jpg')
     video.load();
     changePosters();
 })
