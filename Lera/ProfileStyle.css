@@ -216,13 +216,13 @@ input:focus {
     width: 43px;
     border-radius: 50px;
     margin-right: 20px;
-    background-image: url("/images/profileImg.png");
+    background-image: url("../images/profileImg.png");
 }
 
 .favorites-btn {
     width: 24px;
     height: 24px;
-    background-image: url("/icons/heart.svg");
+    background-image: url("../icons/heart.svg");
 }
 
 .lang,
@@ -374,10 +374,21 @@ h6 {
     display: block;
 }
 
-.instagram { background-image: url("/icons/instagram.svg"); }
-.telegram { background-image: url("/icons/telegram.svg"); }
-.X { background-image: url("/icons/X.svg"); }
-.facebook { background-image: url("/icons/facebook.svg"); }
+.instagram {
+    background-image: url("../icons/instagram.svg");
+}
+
+.telegram {
+    background-image: url("../icons/telegram.svg");
+}
+
+.X {
+    background-image: url("../icons/X.svg");
+}
+
+.facebook {
+    background-image: url("../icons/facebook.svg");
+}
 
 .footer-block h3 {
     margin-bottom: 10px;
@@ -413,7 +424,7 @@ h6 {
 }
 
 .profile-page-container {
-    width: 1610px; 
+    width: 1610px;
     max-width: 95%;
     display: flex;
     flex-direction: column;
@@ -429,9 +440,9 @@ h6 {
     align-items: center;
     width: 100%;
     height: auto;
-    background-color: rgba(0, 29, 57, 0.94); 
+    background-color: rgba(0, 29, 57, 0.94);
     padding: 40px;
-    border-radius: 25px; 
+    border-radius: 25px;
     margin-bottom: 40px;
 }
 
@@ -458,7 +469,7 @@ h6 {
 
 .user-name {
     font-family: "Inter", sans-serif;
-    font-weight: 500; 
+    font-weight: 500;
     font-size: 48px;
     color: white;
     margin-bottom: 10px;
@@ -479,12 +490,12 @@ h6 {
     width: 100%;
     height: auto;
     margin-bottom: 50px;
-    padding-left: 20px; 
+    padding-left: 20px;
 }
 
 .welcome-section h2 {
     font-family: "Inter", sans-serif;
-    font-weight: 400; 
+    font-weight: 400;
     font-size: 32px;
     margin-bottom: 20px;
     height: auto;
@@ -498,7 +509,7 @@ h6 {
 
 .welcome-text p {
     font-family: "Inter", sans-serif;
-    font-weight: 400; 
+    font-weight: 400;
     font-size: 32px;
     line-height: 1.4;
     margin-bottom: 10px;
@@ -515,7 +526,7 @@ h6 {
 
 .plans-title {
     font-family: "Inter", sans-serif;
-    font-weight: bold; 
+    font-weight: bold;
     font-size: 48px;
     margin-bottom: 30px;
     padding-left: 20px;
@@ -525,15 +536,15 @@ h6 {
 
 .plans-grid {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     gap: 20px;
     width: 100%;
     height: auto;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 .plan-card {
-    flex: 1; 
+    flex: 1;
     min-width: 300px;
     border-radius: 25px;
     padding: 30px;
@@ -542,26 +553,26 @@ h6 {
     flex-direction: column;
     justify-content: space-between;
     height: auto;
-    min-height: 500px; 
+    min-height: 500px;
     width: auto;
 }
 
 .student-plan {
-    background-color: rgba(165, 223, 255, 0.9); 
+    background-color: rgba(165, 223, 255, 0.9);
     color: white;
 }
 
 .standard-plan {
-    background-color: #FF689F; 
+    background-color: #FF689F;
 }
 
 .family-plan {
-    background-color: #8C81FF; 
+    background-color: #8C81FF;
 }
 
 .plan-card h3 {
     font-family: "Inter", sans-serif;
-    font-weight: bold; 
+    font-weight: bold;
     font-size: 32px;
     margin-bottom: 20px;
     text-align: center;
@@ -569,23 +580,23 @@ h6 {
 }
 
 .plan-features {
-    display: block; 
-    list-style: disc; 
-    padding-left: 40px; 
+    display: block;
+    list-style: disc;
+    padding-left: 40px;
     margin-bottom: 20px;
-    flex-grow: 1; 
+    flex-grow: 1;
     height: auto;
     width: auto;
-    white-space: normal; 
+    white-space: normal;
     word-wrap: break-word;
 }
 
 .plan-features li {
     font-family: "Inter", sans-serif;
-    font-weight: 500; 
+    font-weight: 500;
     font-size: 24px;
     margin-bottom: 10px;
-    display: list-item; 
+    display: list-item;
     text-align: left;
     height: auto;
     width: auto;
@@ -602,7 +613,8 @@ h6 {
 
 .plan-price {
     font-family: "Inter", sans-serif;
-    font-weight: 500; /* Medium */
+    font-weight: 500;
+    /* Medium */
     font-size: 36px;
     margin-bottom: 25px;
     text-align: center;
@@ -617,7 +629,7 @@ h6 {
     border-radius: 25px;
     padding: 15px 0;
     font-family: "Inter", sans-serif;
-    font-weight: bold; 
+    font-weight: bold;
     font-size: 24px;
     cursor: pointer;
     width: 100%;

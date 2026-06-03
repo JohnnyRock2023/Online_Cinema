@@ -215,13 +215,13 @@ input:focus {
     width: 43px;
     border-radius: 50px;
     margin-right: 20px;
-    background-image: url("/images/profileImg.png");
+    background-image: url("../images/profileImg.png");
 }
 
 .favorites-btn {
     width: 24px;
     height: 24px;
-    background-image: url("/icons/heart.svg");
+    background-image: url("../icons/heart.svg");
 }
 
 .lang,
@@ -357,19 +357,19 @@ h6 {
 /*-------------------------------------------------*/
 
 .instagram {
-    background-image: url("/icons/instagram.svg");
+    background-image: url("../icons/instagram.svg");
 }
 
 .telegram {
-    background-image: url("/icons/telegram.svg");
+    background-image: url("../icons/telegram.svg");
 }
 
 .X {
-    background-image: url("/icons/X.svg");
+    background-image: url("../icons/X.svg");
 }
 
 .facebook {
-    background-image: url("/icons/facebook.svg");
+    background-image: url("../icons/facebook.svg");
 }
 
 /*-------------------------------------------------*/
