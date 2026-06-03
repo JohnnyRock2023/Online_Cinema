@@ -377,11 +377,11 @@ video {
 }
 
 #right-poster {
-    background-image: url("Roma/BallerinaPoster.jpg");
+    background-image: url("posters/BallerinaPoster.jpg");
 }
 
 #left-poster {
-    background-image: url("Roma/posters/DantePoster.jpg");
+    background-image: url("posters/DantePoster.jpg");
 }
 
 .Genre-name h2 {
